@@ -1,0 +1,213 @@
+********************
+
+CHAPTER: 15
+
+********************
+
+
+** Outline
+
+
+outline: outline-width outline-style outline-color|initial|inherit;
+
+1) outline-width
+
+Example:
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+h2 {
+  outline-style: solid;
+  outline-width: thick;
+}
+
+div.a {
+  outline-style: solid;
+  outline-width: thick;  
+}
+
+div.b {
+  border: 1px solid red;
+  outline-style: solid;
+  outline-width: thick;
+}
+</style>
+</head>
+<body>
+
+<h1>The outline-width Property</h1>
+
+<h2>A Heading with a thick outline</h2>
+
+<div class="a">A div element with a thick outline.</div>
+<br>
+
+<div class="b">Notice that the outline is outside of any border.</div>
+
+</body>
+</html>
+
+outline-width: medium|thin|thick|length|initial|inherit;
+
+===========================================================================================================
+
+2) outline-style
+
+Example:
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+h2 {
+  outline-style: dotted;
+}
+
+div.a {
+  outline-style: dotted;
+}
+
+div.b {
+  border: 1px solid red;
+  outline-style: dotted;
+}
+</style>
+</head>
+<body>
+
+<h1>The outline-style Property</h1>
+
+<h2>A Heading with a dotted outline</h2>
+
+<div class="a">A div element with a dotted outline.</div>
+<br>
+
+<div class="b">Notice that the outline is outside of any border.</div>
+
+</body>
+</html>
+
+outline-style: none|hidden|dotted|dashed|solid|double|groove|ridge|inset|outset|initial|inherit;
+
+===========================================================================================================
+
+3) outline-color
+
+Example:
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+h2 {
+  outline-style: solid;
+  outline-color: coral;
+}
+
+div.a {
+  outline-style: solid;
+  outline-color: coral;
+}
+
+div.b {
+  border: 1px solid black;
+  outline-style: solid;
+  outline-color: coral;
+}
+</style>
+</head>
+<body>
+
+<h1>The outline-color Property</h1>
+
+<h2>A heading with a colored outline</h2>
+
+<div class="a">The outline-color can be specified with a color name.</div>
+<br>
+
+<div class="b">Notice that the outline is outside of any border.</div>
+
+<p><strong>Note:</strong> The outline-color property does not work if it is used alone. Use the outline-style property to set the outline first.</p>
+</body>
+</html>
+
+outline-color: color;
+
+===========================================================================================================
+
+
+4) outline-offset
+
+Example:
+
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+div.ex1 {
+  margin: 20px;
+  border: 1px solid black;
+  background-color: yellow;
+  outline: 4px solid red;
+  outline-offset: 15px;
+} 
+
+div.ex2 {
+  margin: 10px;
+  border: 1px solid black;
+  background-color: yellow;
+  outline: 5px dashed blue;
+  outline-offset: 5px;
+} 
+</style>
+</head>
+<body>
+
+<h1>The outline-offset Property</h1>
+
+<div class="ex1">This div has a 4 pixels solid red outline 15 pixels outside the border edge.</div>
+<br>
+
+<div class="ex2">This div has a 5 pixels dashed blue outline 5 pixels outside the border edge.</div>
+
+</body>
+</html>
+
+
+===========================================================================================================
+
+Shorthand property:
+
+Example:
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+h2 {
+  border: 1px solid red;
+  outline: 5px dotted green;
+}
+
+div.a {
+  border: 1px solid red;
+  outline: 2px dashed blue;
+}
+</style>
+</head>
+<body>
+
+<h1>The outline Property</h1>
+
+<h2>A Heading with a 5 pixels green dotted outline</h2>
+
+<div class="a">A div element with a 2 pixels blue dashed outline. Also notice that the outline is outside of any border.</div>
+
+</body>
+</html>
+
+
+
+

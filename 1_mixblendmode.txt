@@ -1,0 +1,115 @@
+********************
+
+CHAPTER: 1
+
+********************
+
+** mix-blend-mode
+
+Example:
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.container {
+  background-color: red;
+  height: 5000px;
+}
+
+img {
+  width: 33.33%;
+  height: auto;
+  float: left;
+}
+
+.normal {mix-blend-mode: normal;}
+.multiply {mix-blend-mode: multiply;}
+.screen {mix-blend-mode: screen;}
+.overlay {mix-blend-mode: overlay;}
+.darken {mix-blend-mode: darken;}
+.lighten {mix-blend-mode: lighten;}
+.color-dodge {mix-blend-mode: color-dodge;}
+.color-burn {mix-blend-mode: color-burn;}
+.difference {mix-blend-mode: difference;}
+.exclusion {mix-blend-mode: exclusion;}
+.hue {mix-blend-mode: hue;}
+.saturation {mix-blend-mode: saturation;}
+.color {mix-blend-mode: color;}
+.luminosity {mix-blend-mode: luminosity;}
+</style>
+</head>
+<body>
+
+<h2>All mix-blend-mode values</h2>
+<p>The mix-blend-mode property specifies how an element's content should blend with its background:</p>
+
+<div class="container">
+  <img src="pineapple.jpg" alt="Pineapple" class="normal" width="300" height="300">
+  <img src="pineapple.jpg" alt="Pineapple" class="multiply" width="300" height="300">
+  <img src="pineapple.jpg" alt="Pineapple" class="screen" width="300" height="300">
+  <img src="pineapple.jpg" alt="Pineapple" class="overlay" width="300" height="300">
+  <img src="pineapple.jpg" alt="Pineapple" class="darken" width="300" height="300">
+  <img src="pineapple.jpg" alt="Pineapple" class="lighten" width="300" height="300">
+  <img src="pineapple.jpg" alt="Pineapple" class="color-dodge" width="300" height="300">
+  <img src="pineapple.jpg" alt="Pineapple" class="color-burn" width="300" height="300">
+  <img src="pineapple.jpg" alt="Pineapple" class="difference" width="300" height="300">
+  <img src="pineapple.jpg" alt="Pineapple" class="exclusion" width="300" height="300">
+  <img src="pineapple.jpg" alt="Pineapple" class="hue" width="300" height="300">
+  <img src="pineapple.jpg" alt="Pineapple" class="saturation" width="300" height="300">
+  <img src="pineapple.jpg" alt="Pineapple" class="color" width="300" height="300">
+  <img src="pineapple.jpg" alt="Pineapple" class="luminosity" width="300" height="300">
+</div>
+
+</body>
+</html>
+
+Example 2:
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+
+.image-container {
+  background-image: url("paris.jpg");
+  background-size: cover;
+  position: relative;
+  height: 300px;
+}
+
+.text {
+  background-color: white;
+  color: black;
+  font-size: 10vw; 
+  font-weight: bold;
+  margin: 0 auto;
+  padding: 10px;
+  width: 50%;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  mix-blend-mode: screen;
+}
+</style>
+</head>
+<body>
+
+<h2>Responsive Cutout Text Effect</h2>
+
+<div class="image-container">
+  <div class="text">PARIS</div>
+</div>
+
+<p>This example creates a responsive cutout text/knockout text - text that appears cut out on top of a background image.</p>
+<p>Resize the browser window to see the responsive effect.</p>
+<p><strong>Note:</strong> This example does not work in Internet Explorer or Edge.</p>
+
+</body>
+</html>
+

@@ -1,0 +1,78 @@
+********************
+
+CHAPTER: 23
+
+********************
+
+
+** unicode-bidi
+
+Example:
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+div.ex1 {
+  direction: rtl;
+  unicode-bidi: bidi-override;
+}
+</style>
+</head>
+<body>
+
+<h1>The unicode-bidi Property</h1>
+
+<div>Some text. Default writing direction.</div>
+<div class="ex1">Some text. Right-to-left direction.</div>
+
+</body>
+</html>
+
+Example 2:
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+div.ex1 {
+  direction: rtl;
+  unicode-bidi: normal;
+}
+</style>
+</head>
+<body>
+
+<h1>The unicode-bidi Property</h1>
+
+<div>Some text. Default writing direction.</div>
+<div class="ex1">Some text. Right-to-left direction.</div>
+
+</body>
+</html>
+
+
+Example 3:
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+div.ex1 {
+  direction: rtl;
+  unicode-bidi: embed;
+}
+</style>
+</head>
+<body>
+
+<h1>The unicode-bidi Property</h1>
+
+<div>Some text. Default writing direction.</div>
+<div class="ex1">Some text. Right-to-left direction.</div>
+
+</body>
+</html>
+
+
+unicode-bidi: normal|embed|bidi-override;

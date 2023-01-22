@@ -1,0 +1,138 @@
+********************
+
+CHAPTER: 18
+
+********************
+
+** Quote
+
+
+Example:
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+#a {
+  quotes: "'" "'";
+}
+
+#b {
+  quotes: "�" "�" "�" "�";
+}
+
+#c {
+  quotes: "�" "�" "�" "�";
+}
+</style>
+</head>
+<body>
+<h1>The quotes Property</h1>
+
+<p><q id="a">This is a quote.</q></p>
+
+<p><q id="b">This is a <q>quote</q> inside a quote.</q></p>
+
+<p><q id="c">This is a <q>quote</q> inside a quote.</q></p>
+
+</body>
+</html>
+
+Example 2:
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+#a {
+  quotes: '\2018';
+}
+
+</style>
+</head>
+<body>
+<h1>The quotes Property</h1>
+
+<p><q id="a">This is a quote.</q></p>
+
+
+</body>
+</html>
+
+Example 3:
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+#a {
+  quotes: "'" "'";
+}
+
+#b {
+  quotes: '\2018' '\2019';
+}
+
+#c {
+  quotes: "'\201D' '\201E'";
+}
+</style>
+</head>
+<body>
+<h1>The quotes Property</h1>
+
+<p><q id="a">This is a quote.</q></p>
+
+<p><q id="b">This is a <q>quote</q> inside a quote.</q></p>
+
+<p><q id="c">This is a <q>quote</q> inside a quote.</q></p>
+
+</body>
+</html>
+
+Example 4:
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+#a {
+  quotes: "'" "'";
+}
+
+#b {
+  quotes: '\2018' '\2019';
+}
+
+#c {
+  quotes: "\201D" "\201E";
+}
+</style>
+</head>
+<body>
+<h1>The quotes Property</h1>
+
+<p><q id="a">This is a quote.</q></p>
+
+<p><q id="b">This is a <q>quote</q> inside a quote.</q></p>
+
+<p><q id="c">This is a <q>quote</q> inside a quote.</q></p>
+
+</body>
+</html>
+
+==============================================================================================================
+
+"	double quote	             \0022
+'	single quote	             \0027
+‹	single, left angle quote	 \2039
+›	single, right angle quote	 \203A
+«	double, left angle quote	 \00AB
+»	double, right angle quote	 \00BB
+‘	left quote (single high-6)	 \2018
+’	right quote (single high-9)	 \2019
+“	left quote (double high-6)	 \201C
+”	right quote (double high-9)	 \201D
+„	double quote (double low-9)	 \201E
+
+

@@ -1,0 +1,29 @@
+********************
+
+CHAPTER: 3
+
+********************
+
+** clip
+
+Example:
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+img {
+  position: absolute;
+  clip: rect(0px,60px,200px,0px);
+}
+</style>
+</head>
+<body>
+
+<img src="img/w3css.gif" width="100" height="140">
+
+</body>
+</html>
+
+
+clip: auto|shape|initial|inherit;

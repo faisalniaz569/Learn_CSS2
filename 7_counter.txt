@@ -1,0 +1,147 @@
+********************
+
+CHAPTER: 7
+
+********************
+
+** counter-increment and counter-reset
+
+Example:
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+  /* Set "my-sec-counter" to 0 */
+  counter-reset: my-sec-counter;
+}
+
+h2::before {
+  /* Increment "my-sec-counter" by 1 */
+  counter-increment: my-sec-counter;
+  content: "Section " counter(my-sec-counter) ". ";
+}
+</style>
+</head>
+<body>
+
+<h2>HTML Tutorial</h2>
+<h2>CSS Tutorial</h2>
+<h2>JavaScript Tutorial</h2>
+<h2>Bootstrap Tutorial</h2>
+<h2>SQL Tutorial</h2>
+<h2>PHP Tutorial</h2>
+
+</body>
+</html>
+
+Example 2:
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+  /* Set "my-sec-counter" to 0 */
+  counter-reset: my-sec-counter;
+}
+
+h2::before {
+  /* Decrement "my-sec-counter" by 1 */
+  counter-increment: my-sec-counter -1;
+  content: "Section " counter(my-sec-counter) ". ";
+}
+</style>
+</head>
+<body>
+
+<h2>HTML Tutorial</h2>
+<h2>CSS Tutorial</h2>
+<h2>JavaScript Tutorial</h2>
+<h2>Bootstrap Tutorial</h2>
+<h2>SQL Tutorial</h2>
+<h2>PHP Tutorial</h2>
+
+</body>
+</html>
+
+
+Example 3:
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+  /* Set "section" to 0 */
+  counter-reset: section;
+}
+
+h1 {
+  /* Set "subsection" to 0 */
+  counter-reset: subsection;
+}
+
+h1::before {
+  counter-increment: section;
+  content: "Section " counter(section) ": ";
+}
+
+h2::before {
+  counter-increment: subsection;
+  content: counter(section) "." counter(subsection) " ";
+}
+</style>
+</head>
+<body>
+
+<h1>HTML and CSS</h1>
+<h2>HTML Tutorial</h2>
+<h2>CSS Tutorial</h2>
+<h2>Bootstrap Tutorial</h2>
+<hr>
+
+<h1>JavaScript</h1>
+<h2>JavaScript Tutorial</h2>
+<h2>jQuery Tutorial</h2>
+<h2>JSON Tutorial</h2>
+<hr>
+
+<h1>Server Side</h1>
+<h2>SQL Tutorial</h2>
+<h2>PHP Tutorial</h2>
+
+</body>
+</html>
+
+
+Example 4:
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+  /* Set "my-sec-counter" to 0 */
+  counter-reset: my-sec-counter;
+}
+
+h2::before {
+  /* Increment "my-sec-counter" by 1 */
+  counter-increment: my-sec-counter;
+  content: counter(my-sec-counter, upper-roman) ". ";
+}
+</style>
+</head>
+<body>
+
+<h2>HTML Tutorial</h2>
+<h2>CSS Tutorial</h2>
+<h2>JavaScript Tutorial</h2>
+<h2>Bootstrap Tutorial</h2>
+<h2>SQL Tutorial</h2>
+<h2>PHP Tutorial</h2>
+
+</body>
+</html>

@@ -1,0 +1,262 @@
+********************
+
+CHAPTER: 4
+
+********************
+
+** content
+
+Example: attr(attribute)
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+a::after {
+  content: " (" attr(href) ")";
+}
+</style>
+</head>
+<body>
+<h1>The content Property</h1>
+<p>The content property is used to insert generated content.</p>
+
+<p>Look at our:</p>
+<p>
+<a href="https://www.w3schools.com/css/">CSS Tutorial</a><br>
+<a href="https://www.w3schools.com/cssref/">CSS Reference</a>
+</p>
+
+</body>
+</html>
+
+
+or,
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+a::before {
+  content: attr(href);
+}
+</style>
+</head>
+<body>
+
+<a href="https://www.w3schools.com">(W3Schools)</a>
+
+<p>The attr() property inserts a specified attribute's value before or after the selected element(s).</p>
+
+</body>
+</html>
+
+Example 2: (normal)
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+p::before {
+  content: "Read this -";
+}
+
+p#hometown::before {
+  content: normal;
+}
+</style>
+</head>
+<body>
+
+<p>My name is Donald</p>
+<p id="hometown">I live in Ducksburg</p>
+
+</body>
+</html>
+
+
+Example 3: (none)
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+p::before {
+  content: "Read this -";
+}
+
+p#hometown::before {
+  content: none;
+}
+</style>
+</head>
+<body>
+
+<p>My name is Donald</p>
+<p id="hometown">I live in Ducksburg</p>
+
+</body>
+</html>
+
+
+
+Example 4: (counter)
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+p {
+  counter-increment: myIndex;
+}
+
+p::before {
+  content:counter(myIndex);
+}
+</style>
+</head>
+<body>
+
+<p>. First make a variable (myIndex) and make it increase every time a p element occurs.</p>
+<p>. Then insert the counter in front of all p elements</p>
+
+</body>
+</html>
+
+
+Example 5: (string)
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+p::before {
+  content: "Read this -";
+}
+</style>
+</head>
+<body>
+
+<p>My name is Donald</p>
+<p>I live in Ducksburg</p>
+
+</body>
+</html>
+
+
+Example 6: (quote)
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+p::before {
+  content: open-quote;
+}
+
+p::after {
+  content: close-quote;
+}
+</style>
+</head>
+<body>
+
+<p>My name is Donald</p>
+<p>I live in Ducksburg</p>
+
+<p><b>Note:</b> You cannot have "close-quote" without "open-quote".</p>
+
+</body>
+</html>
+
+
+Example 7: (no-quote)
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+p::before {
+  content: open-quote;
+}
+
+p::after {
+  content: close-quote;
+}
+
+p.hometown::before {
+  content: no-open-quote;
+}
+
+p.hometown::after {
+  content: no-close-quote;
+}
+</style>
+</head>
+<body>
+
+<p>My name is Donald</p>
+<p class="hometown">I live in Ducksburg</p>
+
+<p><b>Note:</b>In this page, p elements should have quotes, but p elements with class="hometown" should not.</p>
+<p><b>Note:</b> You cannot have "close-quote" without "open-quote".</p>
+
+</body>
+</html>
+
+
+Example 8: (URL)
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+p::before {
+  content: url(w3css.gif);
+}
+</style>
+</head>
+<body>
+
+<p>My name is Donald</p>
+<p>I live in Ducksburg</p>
+
+</body>
+</html>
+
+
+Example 9:
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+ul {
+  list-style: none; /* Remove HTML bullets */
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  padding-left: 16px;
+}
+
+li::before {
+  content: "•"; /* Insert content that looks like bullets */
+  padding-right: 8px;
+  color: blue; /* Or a color you prefer */
+}
+</style>
+</head>
+<body>
+
+<h1>The content Property</h1>
+
+<ul>
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Coca Cola</li>
+</ul>
+
+</body>
+</html>
